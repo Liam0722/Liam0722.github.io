@@ -4,7 +4,8 @@ A static portfolio for GitHub Pages, built with HTML, CSS, and a small image-vie
 
 ## Pages
 
-- `index.html`: introduction, selected work, about, interests, contact
+- `index.html`: concise project overviews and contributions
+- `about.html`: education, skills, personal interests, and contact
 - `lhr.html`: Longhorn Racing suspension and ride-height sensor enclosures
 - `rugged.html`: Rugged Robotics ink fill station and internship work
 - `nasa.html`: NASA MRV failsafe brake
@@ -22,12 +23,12 @@ In Settings → Pages, choose **Deploy from a branch**, then **main** and **/ (r
 
 Edit the HTML pages directly. Shared appearance is in `style.css`; image enlargement is in `site.js`. Project images are optimized WebP files in `assets/`. The résumé is `assets/liam-longfield-resume.pdf`.
 
-The personal section is intentionally compact. A portrait and LHR team photograph will be added when supplied. No substitute personal photographs are included.
+The About and intro pages include seven supplied personal photographs with captions, previous/next buttons, thumbnail selection, keyboard navigation, and swipe support. Images preserve their full composition on a white background. Gallery behavior is in `about-gallery.js`; optimized photographs are in `assets/about/`.
 
-## Design references
+## Content structure
 
-- [MIT Mechanical Engineering Communication Lab](https://mitcommlab.mit.edu/meche/commkit/portfolio/): visual evidence, individual contribution, and project-level storytelling.
-- [WCU examples selected by Adam Harris](https://faculty.wcu.edu/adamharris/student-projects-and-portfolios/): engineering project documentation.
-- [Creative Bloq's selected portfolios](https://www.creativebloq.com/portfolios/examples-712368): restrained layouts, clear project presentation, and personal character.
+Each project uses a standard technical name, a short project overview, a description of Liam’s work, and captioned source images. There are no timeline sections, promotional headlines, or oversized statistics. Background and interests are on the About page.
 
-All project facts and images come from Liam's supplied portfolio context and source files. External references informed the layout only.
+Structure reference: [Thanh Tran’s FSAE Suspension Uprights project](https://thanhvtran.com/portfolio/fsae-suspension-uprights/). The reference informed the concise application/contribution/image structure; its styling and wording were not copied.
+
+All project facts and images come from Liam’s supplied portfolio context and source files.
