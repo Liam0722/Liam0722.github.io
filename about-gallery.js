@@ -42,7 +42,8 @@ if (gallery) {
   status.setAttribute('aria-live', 'off');
   gallery.classList.add('is-ready');
   gallery.querySelector('.photo-controls').hidden = false;
-  gallery.querySelector('.photo-thumbnails').hidden = false;
+  const thumbnails = gallery.querySelector('.photo-thumbnails');
+  if (thumbnails) thumbnails.hidden = false;
   gallery.querySelectorAll('[data-photo-step]').forEach(button => {
     button.addEventListener('click', () => show(current + Number(button.dataset.photoStep)));
   });
