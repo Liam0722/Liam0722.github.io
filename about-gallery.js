@@ -14,7 +14,7 @@ if (gallery) {
   gallery.querySelector('.photo-arrows').prepend(pause);
   function schedule() {
     clearTimeout(timer);
-    if (!paused && !document.hidden) timer = setTimeout(() => show(current + 1), 7500);
+    if (!paused && !document.hidden) timer = setTimeout(() => show(current + 1), 4500);
   }
   function show(index) {
     const restoreFocus = slides[current].contains(document.activeElement);
