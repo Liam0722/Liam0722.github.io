@@ -65,3 +65,103 @@
 
 /* Center the background description beside the slideshow. */
 .intro-layout .intro-copy{align-self:center;padding-top:0}
+
+/* Robotics: assembled system followed by mechanism and manufacturing details. */
+.robotics-overview{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px}
+.robotics-overview>figure img{max-height:530px;object-fit:contain}
+.robotics-process{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.robotics-process img{height:340px;object-fit:contain;background:var(--surface)}
+.robotics-process figcaption{max-width:65ch}
+@media(max-width:760px){.robotics-overview,.robotics-process{grid-template-columns:1fr;gap:24px}.robotics-process img{height:auto}.robotics-overview>figure img{max-height:480px}}
+
+/* Pair each ink-station development stage with its source photograph. */
+.rugged-story{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:36px;align-items:start}
+.rugged-story>figure img{width:100%;height:auto;max-height:550px;object-fit:contain;background:var(--surface)}
+@media(max-width:760px){.rugged-story{grid-template-columns:1fr;gap:22px}}
+
+/* Technical project pages: each explanation stays with its related images. */
+.technical-story{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:36px;align-items:start}
+.story-images{display:grid;gap:24px;min-width:0}
+.story-images img{width:100%;height:auto;max-height:550px;object-fit:contain;background:var(--surface)}
+@media(max-width:760px){.technical-story{grid-template-columns:1fr;gap:22px}}
+
+/* Inline PDF-page preview, including browsers without a built-in PDF viewer. */
+.resume-page{max-width:1000px}
+.resume-heading{display:flex;justify-content:space-between;align-items:center;gap:24px}
+.resume-heading .context{margin-top:8px}
+.resume-download{padding:9px 16px;border:1px solid var(--line);border-radius:6px;font-size:14px;white-space:nowrap;text-decoration:none}
+.resume-download:hover{background:var(--surface)}
+.resume-preview{border:1px solid var(--line);box-shadow:0 6px 24px #24302a0a;background:white}
+.resume-preview img{width:100%;height:auto}
+@media(max-width:480px){.resume-heading{align-items:flex-start;flex-direction:column;gap:16px}.resume-page{width:96%}}
+
+/* Self-hosted typefaces: geometric headings and readable technical copy. */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/manrope-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/manrope-500.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(assets/fonts/manrope-600.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/fonts/manrope-700.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/source-sans-3-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/source-sans-3-500.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(assets/fonts/source-sans-3-600.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/fonts/source-sans-3-700.ttf) format('truetype');
+}
+
+body{font-family:'Source Sans 3','Segoe UI',sans-serif;font-size:17px;line-height:1.65}
+h1,h2,h3,.brand,.intro-name,.photo-title{font-family:'Manrope','Segoe UI',sans-serif}
+h1,h2,.brand{font-weight:600;letter-spacing:-.025em}
+h3{font-size:14px;font-weight:700;letter-spacing:0}
+.project-text,.text-detail>p,.skills{font-size:16px;line-height:1.65}
+.context,.header nav,.details-link,footer{font-size:15px}
+figcaption{font-size:14px;line-height:1.5}
+.intro-heading .intro-name{font-weight:700;letter-spacing:-.045em}
+.intro-heading h1{font-weight:500;letter-spacing:-.025em}
+.intro-copy>p:not(.intro-name){font-size:18px;line-height:1.65}
+.gallery-preview .photo-comment{font-size:16px}
+button{font-family:inherit}
